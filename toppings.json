@@ -1,0 +1,41 @@
+[{
+    "id": 1,
+    "name": "Bacon"
+  },
+  {
+    "id": 2,
+    "name": "Black Olives"
+  },
+  {
+    "id": 3,
+    "name": "Chicken"
+  },
+  {
+    "id": 4,
+    "name": "Green Paper"
+  },
+  {
+    "id": 5,
+    "name": "Mushrooms"
+  },
+  {
+    "id": 6,
+    "name": "Onion"
+  },
+  {
+    "id": 7,
+    "name": "Pepperoni"
+  },
+  {
+    "id": 8,
+    "name": "Salami"
+  },
+  {
+    "id": 9,
+    "name": "Sausage"
+  },
+  {
+    "id": 10,
+    "name": "Spinach"
+  }
+]

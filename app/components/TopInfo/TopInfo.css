@@ -1,0 +1,31 @@
+.page-nav{
+    padding: 6px;
+    background: #FFC433;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 35px;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.page-link-box{
+    width: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.page-link{
+    color: #333333;
+    font-size: 20px;
+    font-weight: 600;
+}
+.page-nav:hover{
+    height: 70px;
+}
+.arrow-icon{
+ transform: rotate(90deg);
+}

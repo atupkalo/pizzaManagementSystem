@@ -1,0 +1,56 @@
+.current-progress{
+    color: #ffffff;
+    padding-bottom: 6px;
+}
+.current-inner-box{
+    color: #ffffff;
+    background: #F67476;
+    border-radius: 12px;
+    padding-bottom: 8px;
+}
+.current-name{
+  font-size: 24px;
+  font-weight: 600;
+  background: #F1272B;
+  padding: 10px;
+  text-align: center;
+  border-radius: 12px 12px 0 0;
+}
+.current-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+}
+.main-btn-list{
+
+}
+.main-btn-item{
+  display: flex;  
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 16px;
+  align-items: center;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  transition: .3s;
+  cursor: pointer;
+}
+.main-btn-item:hover{
+    border-bottom: 2px solid #FFC433;
+    color: #FFC433;
+}
+.main-btn-active{
+    border-radius: 12px;
+    background: #FFC433;
+    color: #F1272B;
+    border-bottom: 2px solid #FFC433;
+}
+.main-btn-active:hover{
+    background: #FFC433;
+    color: #F1272B;
+}

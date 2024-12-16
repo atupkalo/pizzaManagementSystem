@@ -1,0 +1,38 @@
+.main{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.main-right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.side-bar{
+    width: 300px;
+    background: var(--darkGreen);
+    padding: 14px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.logo-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #fff719;
+  border-radius: 10px;
+  padding: 8px;
+  background: #4FB15C;
+}
+.pizza-name{
+  font-family: 'Miltonian Tattoo';
+  font-size: 28px;
+  color: #fff719;
+}

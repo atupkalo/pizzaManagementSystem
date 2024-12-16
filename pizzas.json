@@ -1,0 +1,40 @@
+[{
+    "id": 1,
+    "name": "Mrgherita",
+    "value": 0
+  },
+  {
+    "id": 2,
+    "name": "Four Cheese",
+    "value": 0
+  },
+  {
+    "id": 3,
+    "name": "Papperoni",
+    "value": 0
+  },
+  {
+    "id": 4,
+    "name": "All Maets",
+    "value": 0
+  },
+  {
+    "id": 5,
+    "name": "Vegetarian",
+    "value": 0
+  },
+  {
+    "id": 6,
+    "name": "Spicy Chicken",
+    "value": 0
+  },
+  {
+    "id": 7,
+    "name": "Hawaiian",
+    "value": 0
+  },
+  {
+    "id": 8,
+    "name": "Custom",
+    "value": 1
+  }]
