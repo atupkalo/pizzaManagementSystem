@@ -1,0 +1,211 @@
+.main{
+  position: relative;
+  overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: 100vh;
+  }
+  .sidebar{
+    padding: 12px;
+    background: var(--darkGreen);
+    width: 22%;
+  }
+  .mainRight{
+    width: 78%;
+  }
+  .logocontainer{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 6px;
+    background: var(--lightGreen);
+    margin-bottom: 30px;
+  }
+  .logoWrap{
+    width: 54px;
+    height: 54px;
+  }
+  .pizzaName{
+    color: #FFC433;
+    font-family: "Miltonian Tattoo", serif;
+    font-weight: 400;
+    font-size: 28px;
+  }
+  .topBar{
+    width: 100%;
+    background: var(--lightGreen);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+  }
+  .pig-pizza-img{
+    width: 100%;
+  }
+  .mainDisplay{
+    padding: 12px;
+  }
+  .mainDisplayBox{
+   padding: 12px;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: flex-start;
+   gap: 50px;
+  }
+
+  .pizzasMobile{
+    display: none;
+  }
+
+  .toppingsWrap{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .toppingsWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 14px;
+  }
+  .toppingsTile{
+    display: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  .sideBarOpenHandle{
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    width: 40px;
+    padding: 12px 0 12px 6px;
+    background-color: var(--darkGreen);
+    border-radius: 8px;
+  }
+  .handleActive{
+    transform: rotate(180deg);
+  }
+
+  .sideBarOpen{
+   position: relative;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+
+
+  @media (max-width: 1300px) {
+    .sidebar{
+        width: 26%;
+      }
+      .mainRight{
+        width: 74%;
+      }
+  }
+  /* ================================== 1120 */
+  @media (max-width: 1120px) {
+    .sidebar{
+        width: 32%;
+      }
+      .mainRight{
+        width: 68%;
+      }
+      .topBar{
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .pizzaName{
+        font-size: 24px;
+      }
+      .pizzasMobile{
+        display: block;
+        padding-top: 12px;
+
+     }
+     .pizzasDesk{
+         display: none;
+     }
+     .mainDisplayBox{
+      padding: 24px;
+     }
+     .sidebar{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      transition: left 0.3s ease-in-out;
+     }
+     .mainDisplay{
+      padding: 32px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+     }
+  }
+
+
+   /* ================================== 960 */
+  @media (max-width: 960px) {
+    .sidebar{
+        width: 34%;
+      }
+      .mainRight{
+        width: 66%;
+      }
+      .topBar{
+        gap: 16px;
+      }
+      .mainDisplayBox{
+        padding: 2px;
+        gap: 30px;
+       }
+  }
+
+
+   /* ================================== 768 */
+   @media (max-width: 768px) {
+    .sidebar{
+      width: 92%;
+      height: 100%;
+      position: absolute;
+      transform: translateX(-96%); 
+      top: 0;
+      z-index: 10;
+      transition: .3s;
+    }
+     .sidebarActive{
+      transform: translateX(0); 
+    }
+    .mainRight{
+      width: 100%;
+    }
+    .logocontainer{
+      display: none;
+    }
+    .mainDisplayBox{
+      justify-content: center;
+    }
+    .mainDisplay{
+      padding: 16px 8px 16px 28px;
+     }
+     .toppingsTile{
+      display: block;
+     }
+     .sideBarOpenHandle{
+      display: block;
+     }
+  }

@@ -1,0 +1,41 @@
+.order-data-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+.order-data-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+.order-data-text{
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+}
+.order-data-number{
+    padding: 4px 12px;
+    background: #F2EBD9;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+@media (max-width: 1120px) {
+    .order-data-list{
+        width: 100%;
+        flex-direction: row;
+    }
+    .order-data-item{
+        gap: 8px;
+        justify-content: flex-start;
+    }
+    .order-data-number{
+        padding: 3px 6px;
+    }
+    .order-data-text{
+        font-size: 16px;
+    }
+  }

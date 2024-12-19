@@ -1,3 +1,10 @@
+.sidebar-inner{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
 .current-progress{
     color: #ffffff;
     padding-bottom: 6px;
@@ -7,6 +14,7 @@
     background: #F67476;
     border-radius: 12px;
     padding-bottom: 8px;
+    width: 100%;
 }
 .current-name{
   font-size: 24px;
@@ -23,34 +31,72 @@
     align-items: center;
     padding: 8px 16px;
 }
-.main-btn-list{
 
-}
 .main-btn-item{
-  display: flex;  
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 16px;
-  align-items: center;
-  padding: 10px 30px;
-  font-size: 20px;
-  font-weight: 500;
-  color: #ffffff;
-  border-bottom: 2px solid #ffffff;
-  transition: .3s;
-  cursor: pointer;
-}
-.main-btn-item:hover{
-    border-bottom: 2px solid #FFC433;
-    color: #FFC433;
-}
-.main-btn-active{
-    border-radius: 12px;
-    background: #FFC433;
-    color: #F1272B;
-    border-bottom: 2px solid #FFC433;
-}
-.main-btn-active:hover{
-    background: #FFC433;
-    color: #F1272B;
-}
+    display: flex;  
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 16px;
+    align-items: center;
+    padding: 8px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    transition: .3s;
+    cursor: pointer;
+  }
+  .main-btn-icon{
+   width: 58px;
+   height: 58px;
+  }
+  .main-btn-item:hover{
+      border-bottom: 2px solid #FFC433;
+      color: #FFC433;
+  }
+  .main-btn-active{
+      border-radius: 12px;
+      background: #FFC433;
+      color: #F1272B;
+      border-bottom: 2px solid #FFC433;
+  }
+  .main-btn-active:hover{
+      background: #FFC433;
+      color: #F1272B;
+  }
+
+  .strong{
+    font-weight: 600;
+  }
+
+  @media (max-width: 1120px) {
+    .current-name{
+        font-size: 20px;
+    }
+    .current-item{
+        padding: 6px 14px;
+    }
+  }
+
+    /* ================================== 768 */
+  @media (max-width: 768px) {
+    .current-name{
+      font-weight: 500;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    .current-item{
+       padding-top: 3px;
+       padding-bottom: 3px;
+    }
+    .strong{
+        font-weight: 500;
+      }
+      .main-btn-icon-wrap{
+         width: 40px;
+         height: 40px;
+      }
+      .main-btn-item{
+        padding: 6px 30px;
+      }
+  }

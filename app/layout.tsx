@@ -6,6 +6,7 @@ import "./globals.css";
 const redHatDisplay = Red_Hat_Display({
   variable: "--font-red-hat-dispaly",
   subsets: ["latin"],
+  weight: "500"
 });
 
 const miltonianTattoo = Miltonian_Tattoo({
@@ -22,13 +23,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body className={`${redHatDisplay.variable}`}>
         {children}
+      <section className={`${miltonianTattoo.variable}`}></section>
       </body>
     </html>
   );

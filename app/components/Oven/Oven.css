@@ -1,0 +1,87 @@
+.oven, .oven-info-top, .oven-info-bottom, .oven-info-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.oven-icon-wrap, .oven-info-wrap{
+    display: flex;
+    flex-direction: column;
+}
+.oven-info-wrap{
+    position: relative;
+    padding: 0 6px;
+}
+.oven{
+    background: #FFE299;
+    border-radius: 10px;
+    overflow: hidden;
+    align-items: stretch;
+    width: fit-content;
+}
+.oven-icon-wrap{
+  background: var(--backgroundGray);
+  padding: 8px;
+}
+.oven-info-top{
+    padding: 8px 8px 4px 8px;
+    gap: 12px;
+    border-bottom: 1px solid #333333;
+}
+.oven-info-bottom{
+    padding: 4px 8px 8px 8px;
+    gap: 12px;
+}
+.oven-info-item{
+   border-radius: 8px;
+   padding: 6px 12px;
+   border: 1px solid #ffffff;
+   background: #FFC433;
+   gap: 6px;
+}
+.oven-info-item-green{
+    background: #377C40;
+}
+.oven-text{
+    text-align: center;
+    padding-bottom: 4px;
+    font-weight: 600;
+}
+.oven-info-item{
+    font-weight: 600;
+    color: #ffffff;
+}
+.oven-arrow{
+    transform: rotate(90deg);
+}
+.ovenBtn{
+  display: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  padding: 6px 18px;
+  border-radius: 8px;
+  border: 1px solid #333333;
+  background: #F2EBD9;
+}
+
+@media (max-width: 1120px) {
+    .oven-info-top{
+        padding: 8px 8px 4px 8px;
+        gap: 8px;
+    }
+    .oven-info-bottom{
+        padding: 4px 8px 8px 8px;
+        gap: 8px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .ovenBtn{
+      display: flex;
+    }
+    .oven{
+      display: none;
+    }
+}

@@ -1,0 +1,40 @@
+.storage-top-wrap{
+    padding: 14px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 12px;
+}
+.storage-top-expires, .storage-top-out, .storage-top-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+.storage-top-item{
+    padding: 6px 10px;
+    background: #F2EBD9;
+    border-radius: 8px;
+}
+.storage-top-text{
+   color: #ffffff;
+   font-weight: 600;
+}
+
+@media (max-width: 1120px) {
+    .storage-top-expires, .storage-top-out {
+        display: flex; /* Ensures items stay in a row */
+        overflow: hidden; /* Hides overflowing content */
+        white-space: nowrap; /* Prevents wrapping */
+        align-items: center; /* Aligns items vertically */
+        gap: 8px; /* Optional: adds spacing between items */
+    }
+    
+    .storage-top-item {
+        flex-shrink: 0; /* Prevents items from shrinking */
+        overflow: hidden; /* Hides content overflow */
+        text-overflow: ellipsis; /* Adds "..." if the content overflows */
+        white-space: nowrap; /* Keeps the text on one line */
+    }
+}

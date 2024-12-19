@@ -1,0 +1,21 @@
+[{
+   "label": "Order number",
+    "value": "03"
+  },
+  {
+    "label": "Size", 
+    "value": "Small"
+  },
+  { 
+    "label": "Extras", 
+    "value": "Cheese" 
+},
+{ 
+    "label": "Exclude", 
+    "value": "-" 
+},
+{ 
+    "label": "Ready in", 
+    "value": "5:20" 
+}
+]
