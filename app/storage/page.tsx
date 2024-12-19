@@ -20,7 +20,10 @@ export default function Storage() {
 
   const toggleHandle = () => {
     setIsHandleActive((prev) => !prev);
+    console.log(isHandleActive);
   };
+
+
 
   const content = (
     <main className={styles.main}>

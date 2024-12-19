@@ -15,7 +15,6 @@ import Oven from "./components/Oven/Oven";
 import OrderData from "./components/OrderData/OrderData";
 import Pizzas from "./components/Pizzas/Pizzas";
 
-const isActive = true;
 
 export default function Kitchen() {
 
@@ -28,6 +27,7 @@ export default function Kitchen() {
 
   const toggleHandle = () => {
     setIsHandleActive((prev) => !prev);
+    console.log(isHandleActive);
   };
 
   const content = (
