@@ -1,54 +1,57 @@
+
+.page-nav-wrap {
+  position: relative;
+  height: 70px;
+}
+
 .page-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    padding: 8px 22px;
-    background: #FFC433;
-    overflow: hidden; 
-    border-radius: 8px;
-    height: 35px; 
-    transition: height 0.3s ease-in-out; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 8px 22px;
+  background: #FFC433;
+  overflow: hidden; 
+  border-radius: 8px;
+  height: 35px; 
+  transition: 0.3s ease-in-out; 
+  cursor: pointer;
+  transform-origin: top; 
 }
 
 .page-link-box {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
 }
 
 .page-link {
-    color: #333333;
-    font-size: 18px;
-    font-weight: 600;
-    text-decoration: none;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .page-nav:hover {
-    height: auto;
-    padding-bottom: 10px;
+  height: auto; 
 }
 
 .page-link-box:not(:first-child) {
-    display: none; 
+  display: none;
 }
 
 .page-nav:hover .page-link-box:not(:first-child) {
-    display: flex; 
+  display: flex;
 }
 
 .arrow-icon {
-    transform: rotate(90deg);
-    transition: transform 0.3s ease-in-out; 
+  transform: rotate(90deg); 
+  transition: transform 0.3s ease-in-out;
 }
 
 .page-nav:hover .arrow-icon {
-    transform: rotate(270deg); 
+  transform: rotate(270deg); 
 }

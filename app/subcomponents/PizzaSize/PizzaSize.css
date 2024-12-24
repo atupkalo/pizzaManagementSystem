@@ -1,0 +1,29 @@
+.pizzas-size{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.size-item{
+    cursor: pointer;
+    transition: .3s;
+}
+.size-item-hover:hover{
+   opacity: .5;
+}
+.size-circle{
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   background: #ffffff;
+   border: 1px, solid, #cccccc;
+}
+.size-circle-active{
+   background: #377C40;
+   border: 1px, solid, #377C40;
+}
+.size-text-active{
+    font-weight: 700;
+    color: #377C40;
+}

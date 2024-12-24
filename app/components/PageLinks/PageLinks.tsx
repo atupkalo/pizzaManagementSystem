@@ -19,7 +19,8 @@ export default function PageLinks() {
   );
 
   return (
-    <div className="page-nav">
+    <div className="page-nav-wrap">
+      <div className="page-nav">
       {sortedPages.map((item, index) => (
         <div key={index} className="page-link-box">
           <p>
@@ -38,6 +39,7 @@ export default function PageLinks() {
           )}
         </div>
       ))}
+     </div>
     </div>
   );
 }

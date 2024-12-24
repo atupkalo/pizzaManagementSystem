@@ -1,0 +1,28 @@
+.ingridient{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 200px;
+      padding: 10px 20px;
+      background: #FFDA80;
+      border-radius: 12px;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+      transition: .3s;
+  }
+  .ingridient:hover{
+    background: #FFE299;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  }
+  .ingridient-name{
+      font-family: var(--font-red-hat-dispaly);
+      font-size: 18px;
+      font-weight: 600;
+      color: #F1272B;
+  }
+  .ingridient-circle{
+   width: 14px;
+   height: 14px;
+   border: 1px solid #F1272B;
+   border-radius: 50%;
+  }

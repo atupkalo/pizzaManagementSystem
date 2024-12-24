@@ -1,0 +1,44 @@
+.ingridients-wrap, .ingridients-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+ }
+ .ingridients-wrap{
+    background: #F2EBD9;
+    border-radius: 12px;
+    border: 1px solid #FFC433;
+    padding: 16px 26px;
+    gap: 14px;
+    width: fit-content;
+ }
+ .ingridients-list{
+    gap: 12px;
+ }
+
+
+.edit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+ .edit-text{
+    font-weight: 500;
+  }
+  .edit{
+      border: 1px solid #333333;
+      border-radius: 8px;
+      padding: 4px 10px;
+      background-color:  #FFC433;
+      transition: .3s;
+      cursor: pointer;
+  }
+  .edit-icon-wrap{
+    width: 20px;
+    height: 20px;
+  }
+  .edit:hover{
+     background-color: #fedc87;
+  }
