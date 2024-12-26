@@ -33,6 +33,7 @@ export default function SideBarContent({ setActiveSection }: SideBarContentProps
     }));
     setMenuButtons(updatedButtons);
     setActiveSection(menuButtons[index].label);
+
   };
 
   return (

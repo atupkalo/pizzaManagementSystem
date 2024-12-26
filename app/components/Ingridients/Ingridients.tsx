@@ -30,11 +30,11 @@ export default function Ingredients({ activeSection }: { activeSection: string }
 
     setDataToMap(newData);
   }, [activeSection]);
-
+   console.log(activeSection);
   return (
     <div className="ingridients-wrap">
       <ul className="ingridients-list">
-        {(activeSection === "PIZZAS" || activeSection === "COSTUM") && <PizaSize />}
+        {(activeSection === "PIZZAS" || activeSection === "CUSTOM") && <PizaSize />}
         {dataToMap.map((item: IngredientItem, index: number) => (
           <Ingridient key={index} text={item.name} />
         ))}
