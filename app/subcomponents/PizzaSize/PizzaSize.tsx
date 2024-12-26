@@ -4,7 +4,7 @@ import "./PizzaSize.css";
 export default function PizzaSize() {
   const [activeSize, setActiveSize] = useState("Large"); 
 
-  const handleSizeClick = (size) => {
+  const handleSizeClick = (size: string) => {
     setActiveSize(size); // Update active size
   };
 

@@ -19,7 +19,7 @@ export default function Pizzas() {
         </div>
         <ul className="pizzas-list">
             {PizzasMenu.map((item, index) => (
-                <Ingridient key={index} {item.name}/>
+                <Ingridient key={index} text={item.name}/>
             ))}
         </ul>
         <div className="pizzas-btn">ADD</div>

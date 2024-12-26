@@ -8,34 +8,34 @@ import Toppings from "../../../data/toppings.json";
 import Custom from "../../../data/costum.json";
 import Image from "next/image";
 
-export default function Ingridients({ activeSection }) {
+interface IngredientItem {
+  name: string;
+}
 
-  const [dataToMap, setDataToMap] = useState([]);
+
+export default function Ingredients({ activeSection }: { activeSection: string }) {
+  const [dataToMap, setDataToMap] = useState<IngredientItem[]>([]);
 
   useEffect(() => {
-    let newData = [];
- 
+    let newData: IngredientItem[] = [];
     const section = activeSection.toUpperCase();
 
     if (section === "PIZZAS") {
-      newData = [...PizzasMenu]; 
+      newData = [...PizzasMenu];
     } else if (section === "TOPPINGS") {
       newData = [...Toppings];
     } else if (section === "CUSTOM") {
       newData = [...Custom];
     }
 
-    setDataToMap(newData); 
-  }, [activeSection]); 
-
-  console.log(dataToMap); 
+    setDataToMap(newData);
+  }, [activeSection]);
 
   return (
     <div className="ingridients-wrap">
       <ul className="ingridients-list">
-      
         {(activeSection === "PIZZAS" || activeSection === "COSTUM") && <PizaSize />}
-        {dataToMap.map((item, index) => (
+        {dataToMap.map((item: IngredientItem, index: number) => (
           <Ingridient key={index} text={item.name} />
         ))}
       </ul>

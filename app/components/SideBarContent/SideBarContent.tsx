@@ -3,22 +3,35 @@ import currentOrder from "../../../data/currentorder.json";
 import Image from "next/image";
 import { useState } from "react";
 
-export default function SideBarContent({ setActiveSection }) {
-  const [menuButtons, setMenuButtons] = useState([
+interface MenuButton {
+  label: string;
+  icon: string;
+  isActive: boolean;
+}
+
+interface OrderItem {
+  label: string;
+  value: string;
+}
+
+interface SideBarContentProps {
+  activeSection: string;
+  setActiveSection: (section: string) => void;
+}
+
+export default function SideBarContent({ setActiveSection }: SideBarContentProps) {
+  const [menuButtons, setMenuButtons] = useState<MenuButton[]>([
     { label: "PIZZAS", icon: "/pizzas.svg", isActive: true },
     { label: "CUSTOM", icon: "/custom.svg", isActive: false },
     { label: "TOPPINGS", icon: "/toppings.svg", isActive: false },
   ]);
 
-  const handleMenuClick = (index) => {
- 
+  const handleMenuClick = (index: number): void => {
     const updatedButtons = menuButtons.map((button, i) => ({
       ...button,
       isActive: i === index,
     }));
     setMenuButtons(updatedButtons);
-
-   
     setActiveSection(menuButtons[index].label);
   };
 
@@ -28,7 +41,7 @@ export default function SideBarContent({ setActiveSection }) {
         <div className="current-progress">In progress</div>
         <div className="current-inner-box">
           <div className="current-name">Vegetarian</div>
-          {currentOrder.map((item, index) => (
+          {currentOrder.map((item: OrderItem, index: number) => (
             <div key={index} className="current-item">
               <p className="strong">{item.label}</p>
               <p>{item.value}</p>
@@ -38,11 +51,11 @@ export default function SideBarContent({ setActiveSection }) {
       </div>
       <div className="main-menu-container">
         <ul className="main-btn-list">
-          {menuButtons.map((item, index) => (
+          {menuButtons.map((item: MenuButton, index: number) => (
             <li
               key={index}
               className={`main-btn-item ${item.isActive ? "main-btn-active" : ""}`}
-              onClick={() => handleMenuClick(index)} 
+              onClick={() => handleMenuClick(index)}
             >
               <div className="main-btn-icon-wrap">
                 <Image

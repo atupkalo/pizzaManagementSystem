@@ -1,9 +1,9 @@
 "use client";
 
+import React from "react";
 import { useState } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
-
 import "./kitchen.css";
 
 import PageLinks from "./components/PageLinks/PageLinks";
@@ -17,10 +17,10 @@ import Pizzas from "./components/Pizzas/Pizzas";
 import Ingridients from "./components/Ingridients/Ingridients";
 
 export default function Kitchen() {
-  const [isSidebarActive, setIsSidebarActive] = useState(false);
-  const [activeSection, setActiveSection] = useState("Pizzas"); // Default active section
+  const [isSidebarActive, setIsSidebarActive] = useState<boolean>(false);
+  const [activeSection, setActiveSection] = useState<string>("Pizzas");
 
-  const toggleSidebar = () => setIsSidebarActive((prev) => !prev);
+  const toggleSidebar = (): void => setIsSidebarActive((prev) => !prev);
 
   return (
     <main className={styles.main}>
@@ -31,7 +31,7 @@ export default function Kitchen() {
             onClick={toggleSidebar}
           >
             <Image
-              src={"/arrow-w.svg"}
+              src="/arrow-w.svg"
               layout="responsive"
               width={4}
               height={4}
@@ -41,11 +41,10 @@ export default function Kitchen() {
           <div className={styles.logocontainer}>
             <div className={styles.pizzaName}>No Pine Zone</div>
             <div className={styles.logoWrap}>
-              <Image src={"/Logo.svg"} layout="responsive" width={4} height={4} alt="Pizza logo" />
+              <Image src="/Logo.svg" layout="responsive" width={4} height={4} alt="Pizza logo" />
             </div>
           </div>
-          {/* Pass setActiveSection to SideBarContent */}
-          <SideBarContent setActiveSection={setActiveSection} />
+          <SideBarContent activeSection={activeSection} setActiveSection={setActiveSection} />
           <div className={styles.pizzasMobile}>
             <Pizzas />
           </div>

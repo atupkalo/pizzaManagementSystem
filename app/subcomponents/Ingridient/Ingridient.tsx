@@ -1,6 +1,6 @@
 import "./Ingridient.css"
 
-export default function Ingridient({text}) {
+export default function Ingridient({text} : {text: string}) {
   return (
     <li className="ingridient">
         <div className="ingridient-name">{text}</div>

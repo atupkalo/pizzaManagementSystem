@@ -14,8 +14,13 @@
  }
  .ingridients-list{
     gap: 12px;
+    padding: 12px;
+    height: 320px; 
+    overflow-y: auto; 
+    overflow-x: hidden;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
  }
-
 
 .edit{
     display: flex;
@@ -42,3 +47,4 @@
   .edit:hover{
      background-color: #fedc87;
   }
+
