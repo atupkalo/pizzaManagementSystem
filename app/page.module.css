@@ -44,22 +44,32 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 32px;
+    gap: 70px;
   }
   .pig-pizza-img{
     width: 100%;
   }
   .mainDisplay{
     padding: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .mainDisplayTop{
+    width: 100%;
   }
   .mainDisplayBox{
-   padding: 12px;
+   width: 100%;
    display: flex;
    flex-direction: row;
    justify-content: flex-start;
    align-items: flex-start;
    gap: 50px;
   }
+
 
   .pizzasMobile{
     display: none;
@@ -126,6 +136,7 @@
       .topBar{
         flex-direction: column;
         align-items: flex-start;
+        gap: 24px;
       }
       .pizzaName{
         font-size: 24px;
@@ -149,11 +160,11 @@
       transition: left 0.3s ease-in-out;
      }
      .mainDisplay{
-      padding: 32px;
+      padding: 16px;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
      }
   }
 
@@ -176,8 +187,8 @@
   }
 
 
-   /* ================================== 768 */
-   @media (max-width: 768px) {
+   /* ================================== 762*/
+   @media (max-width: 762px) {
     .sidebar{
       width: 92%;
       height: 100%;
@@ -186,6 +197,10 @@
       top: 0;
       z-index: 10;
       transition: .3s;
+    }
+    .topBar{
+      padding: 12px 12px 12px 22px;
+      gap: 12px;
     }
      .sidebarActive{
       transform: translateX(0); 
@@ -200,7 +215,7 @@
       justify-content: center;
     }
     .mainDisplay{
-      padding: 16px 8px 16px 28px;
+      padding: 6px 8px 16px 28px;
      }
      .toppingsTile{
       display: block;

@@ -2,9 +2,8 @@
 
 import React from "react";
 import { useState } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import styles from "./page.module.css";
-import "./kitchen.css";
 
 import PageLinks from "./components/PageLinks/PageLinks";
 import ProgressBar from "./components/Progress/ProgressBar";
@@ -56,8 +55,8 @@ export default function Kitchen() {
           <OrderData />
           <Oven />
         </div>
-        <div className="main-dispaly">
-          <div className="main-dispalay-top">
+        <div className={styles.mainDisplay}>
+          <div className={styles.mainDisplayTop}>
             <OrdersLine />
             <ProgressBar />
           </div>

@@ -27,13 +27,13 @@
     text-align: center;
     width: 100%;
 }
-.progress-bar-text{
+.topping-avalibility-text{
   padding-bottom: 8px;
 }
 .cart-bar{
  width: 100%;
 }
-.progress-bar{
+.topping-avalibility{
    position: relative;
    width: 100%;
    background-color: #F2EBD9;
@@ -42,7 +42,7 @@
    width: 100%;
 }
 
-.progress-bar:after{
+.topping-avalibility:after{
     content: "";
     position: absolute;
     top: 0;
@@ -153,6 +153,7 @@
     }
     .cart-wrap{
       font-size: 14px;
+      width: 100%;
     }
     .cart-title{
         font-size: 24px;

@@ -1,6 +1,6 @@
 import "./SideBarContent.css";
 import currentOrder from "../../../data/currentorder.json";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useState } from "react";
 
 interface MenuButton {
@@ -61,9 +61,7 @@ export default function SideBarContent({ setActiveSection }: SideBarContentProps
               <div className="main-btn-icon-wrap">
                 <Image
                   src={item.icon}
-                  layout="responsive"
-                  width={4}
-                  height={4}
+                  layout="fill" 
                   alt="Pizza icon"
                   className="main-btn-icon"
                 />

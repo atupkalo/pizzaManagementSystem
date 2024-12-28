@@ -18,7 +18,6 @@ const orderData = [
 
 export default function OrderData() {
   return (
-    <div className="order-data-wrap">
       <ul className="order-data-list">
         {orderData.map((item, index) => (
          <li key={index}className="order-data-item">
@@ -27,6 +26,5 @@ export default function OrderData() {
          </li>
         ))}
       </ul>
-    </div>
   )
 }

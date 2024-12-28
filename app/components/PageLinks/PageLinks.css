@@ -1,22 +1,18 @@
-
 .page-nav-wrap {
   position: relative;
-  height: 70px;
+  width: 130px;
+  height: 38px;
 }
 
 .page-nav {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
-  padding: 8px 22px;
-  background: #FFC433;
-  overflow: hidden; 
+  padding: 4px 14px;
+  background: #ffc433;
   border-radius: 8px;
-  height: 35px; 
-  transition: 0.3s ease-in-out; 
   cursor: pointer;
-  transform-origin: top; 
 }
 
 .page-link-box {
@@ -25,9 +21,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: 16px;
+  transition: opacity 0.3s ease-in-out;
 }
-
+.page-link-wrap{
+  padding: 4px 6px;
+}
 .page-link {
   color: #333333;
   font-size: 18px;
@@ -35,23 +33,26 @@
   text-decoration: none;
 }
 
-.page-nav:hover {
-  height: auto; 
+.dropdown-option {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition: height 0.3s ease, opacity 0.3s ease;
 }
 
-.page-link-box:not(:first-child) {
-  display: none;
-}
-
-.page-nav:hover .page-link-box:not(:first-child) {
-  display: flex;
+.page-nav:hover .dropdown-option {
+  opacity: 1;
+  height: auto;
+  overflow: visible;
+  pointer-events: auto;
 }
 
 .arrow-icon {
-  transform: rotate(90deg); 
+  transform: rotate(90deg);
   transition: transform 0.3s ease-in-out;
 }
 
 .page-nav:hover .arrow-icon {
-  transform: rotate(270deg); 
+  transform: rotate(270deg);
 }

@@ -1,7 +1,7 @@
 import "./Pizzas.css";
 import Ingridient from "../Ingridient/Ingridient";
 import PizzasMenu from "../../../data/pizzas.json";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function Pizzas() {
   return (

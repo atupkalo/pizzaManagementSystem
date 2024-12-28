@@ -49,10 +49,12 @@
     cursor: pointer;
     margin-bottom: 8px;
   }
-  .main-btn-icon{
-   width: 58px;
-   height: 58px;
+  .main-btn-icon-wrap{
+    position: relative;
+    width: 58px;
+    height: 58px;
   }
+
   .main-btn-item:hover{
       border: 1px solid #FFC433;
       color: #FFC433;

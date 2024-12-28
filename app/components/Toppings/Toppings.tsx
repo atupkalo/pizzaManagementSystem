@@ -3,8 +3,8 @@ import Toppings from "../../../data/toppings.json";
 
 export default function Pazzas() {
   return (
-    <div className="pizzas-wrap">
-      <ul className="pizzas-list">
+    <div className="toppings-wrap">
+      <ul className="toppings-list">
         {Toppings.map((item, index) => (
             <li key={index} className="pizza-item">
                 <div className="pizza-name">{item.name}</div>

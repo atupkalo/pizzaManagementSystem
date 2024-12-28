@@ -1,10 +1,9 @@
 import "./ToppingsCart.css";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function ToppingsCart() {
   return (
     <div className="cart-wrap">
-    {/* Close Button */}
     <div className="cart-close">
         <Image
         src="/cancel.svg"
@@ -15,13 +14,12 @@ export default function ToppingsCart() {
         />
     </div>
 
-    {/* Title */}
     <div className="cart-title">Bacon</div>
 
     {/* Progress Bar */}
     <div className="cart-bar">
-        <div className="progress-bar-text"> Total usage: <strong>40%</strong></div>
-        <div className="progress-bar"></div>
+        <div className="topping-avalibility-text"> Total usage: <strong>40%</strong></div>
+        <div className="topping-avalibility"></div>
     </div>
     <div className="gap"></div>
 

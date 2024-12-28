@@ -1,4 +1,4 @@
-.pizzas-wrap{
+.toppings-wrap{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -10,7 +10,7 @@
     gap: 14px;
     width: fit-content;
  }
- .pizzas-list{
+ .toppings-list{
      display: flex;
      flex-direction: column;
      justify-content: flex-start;

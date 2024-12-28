@@ -2,7 +2,7 @@
 
 import { useState } from 'react'; 
 import styles from '../page.module.css';
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 import PageLinks from "../components/PageLinks/PageLinks";
 import Toppings from "../components/Toppings/Toppings";

@@ -6,7 +6,7 @@ import PizaSize from "../../subcomponents/PizzaSize/PizzaSize";
 import PizzasMenu from "../../../data/pizzas.json";
 import Toppings from "../../../data/toppings.json";
 import Custom from "../../../data/costum.json";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 interface IngredientItem {
   name: string;
@@ -30,7 +30,7 @@ export default function Ingredients({ activeSection }: { activeSection: string }
 
     setDataToMap(newData);
   }, [activeSection]);
-   console.log(activeSection);
+ 
   return (
     <div className="ingridients-wrap">
       <ul className="ingridients-list">

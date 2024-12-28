@@ -1,5 +1,5 @@
 import "./BigPizza.css";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function BigPizza() {
   return (

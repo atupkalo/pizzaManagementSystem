@@ -3,13 +3,17 @@
   padding-bottom: 6px;
 }
 .orders-line{
-    padding: 12px 0 6px 12px;
+    position: relative;
+    padding: 6px 0 6px 12px;
     border-bottom: 1px solid #cccccc;
     width: 99%;
     overflow: hidden;
 }
 .order-line-list{ 
     gap: 16px;  
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+    padding-bottom: 2px; 
 }
 
 .order-line-list, 
@@ -30,6 +34,15 @@
     flex-shrink: 0; 
     gap: 10px;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
+.order-line-ready-indicator{
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background: var(--darkGreen);
+}
+.order-line-ready-indicator_active{
+    background: red;
 }
 .order-info{
     display: flex;
@@ -54,3 +67,9 @@
 .order-line-ready{
     font-weight: 400;
 }
+
+@media (max-width: 960px) {
+    .order-info{
+        padding-right: 20px;
+    }
+  }
